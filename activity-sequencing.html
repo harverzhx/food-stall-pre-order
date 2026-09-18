@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity Sequencing | Food Stall Pre-Order App</title>
+  <meta name="description"
+    content="Activity sequencing of the Food Stall Pre-Order App project with Finish-to-Start relationships." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="sequencing">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-menu">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="project-overview.html" data-nav="overview">Project Overview</a>
+        <a href="wbs-diagram.html" data-nav="wbs">WBS Diagram</a>
+        <a href="activity-sequencing.html" data-nav="sequencing">Activity Sequencing</a>
+        <a href="activity-duration.html" data-nav="duration">Activity Duration</a>
+        <a href="gantt-chart.html" data-nav="gantt">Gantt Chart</a>
+        <a href="team-contact.html" data-nav="team">Team &amp; Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="activity-sequencing">
+      <div class="container text-center">
+        <h2 class="section-title">Activity Sequencing</h2>
+        <p class="section-sub">Vertical activity sequence from START to END, aligned with the project&rsquo;s 6-phase
+          WBS. Each activity is completed sequentially before moving to the next phase.</p>
+      </div>
+      <div class="container">
+        <div class="as-diagram">
+          <div class="as-node start">Start</div>
+          <div class="as-arrow"></div>
+
+          <article class="as-card c1">
+            <div class="as-card-head">
+              <div class="as-num">1.0</div>
+              <h3>Project Management &amp; Planning</h3>
+            </div>
+            <div class="as-tasks">
+              <div class="as-task">1.1 Define project scope &amp; objectives</div>
+              <div class="as-task">1.2 Identify Stakeholders &amp; Users</div>
+              <div class="as-task">1.3 Gather Initial Requirements</div>
+              <div class="as-task">1.4 Develop Project Schedule &amp; Risk Plan</div>
+            </div>
+          </article>
+
+          <div class="as-arrow"></div>
+          <article class="as-card c2">
+            <div class="as-card-head">
+              <div class="as-num">2.0</div>
+              <h3>System Design</h3>
+            </div>
+            <div class="as-tasks">
+              <div class="as-task">2.1 Design system architecture</div>
+              <div class="as-task">2.2 Design Database Schema (ERD)</div>
+              <div class="as-task">2.3 Design UI/UX Wireframes (Figma)</div>
+              <div class="as-task">2.4 Design Order &amp; Payment Workflow</div>
+            </div>
+          </article>
+
+          <div class="as-arrow"></div>
+          <article class="as-card c3">
+            <div class="as-card-head">
+              <div class="as-num">3.0</div>
+              <h3>System Development</h3>
+            </div>
+            <div class="as-tasks">
+              <div class="as-task">3.1 Develop User Auth &amp; Profiles</div>
+              <div class="as-task">3.2 Develop Customer App (Pre-Order &amp; Menu)</div>
+              <div class="as-task">3.3 Develop Vendor Dashboard (Stock &amp; Sales)</div>
+              <div class="as-task">3.4 Develop Back-End APIs &amp; Database Connect</div>
+            </div>
+          </article>
+
+          <div class="as-arrow"></div>
+          <article class="as-card c4">
+            <div class="as-card-head">
+              <div class="as-num">4.0</div>
+              <h3>System Testing &amp; QA</h3>
+            </div>
+            <div class="as-tasks">
+              <div class="as-task">4.1 Prepare Test Cases &amp; Plan</div>
+              <div class="as-task">4.2 Conduct Unit &amp; System Testing</div>
+              <div class="as-task">4.3 Conduct QR / Order Scanning Tests</div>
+              <div class="as-task">4.4 Perform User Acceptance Testing (UAT)</div>
+            </div>
+          </article>
+
+          <div class="as-arrow"></div>
+          <article class="as-card c5">
+            <div class="as-card-head">
+              <div class="as-num">5.0</div>
+              <h3>Deployment &amp; Implementation</h3>
+            </div>
+            <div class="as-tasks">
+              <div class="as-task">5.1 Prepare Production Environment</div>
+              <div class="as-task">5.2 Deploy App &amp; Database (Cloud Host)</div>
+              <div class="as-task">5.3 Vendor Onboarding &amp; Training</div>
+              <div class="as-task">5.4 Launch App to Students &amp; Campus</div>
+            </div>
+          </article>
+
+          <div class="as-arrow"></div>
+          <article class="as-card c6">
+            <div class="as-card-head">
+              <div class="as-num">6.0</div>
+              <h3>Documentation &amp; Project Closure</h3>
+            </div>
+            <div class="as-tasks">
+              <div class="as-task">6.1 Prepare Technical &amp; User Manuals</div>
+              <div class="as-task">6.2 Conduct Final Presentation / Demo</div>
+              <div class="as-task">6.3 Turn Over System to School Canteen</div>
+              <div class="as-task">6.4 Obtain Final Project Acceptance</div>
+            </div>
+          </article>
+
+          <div class="as-arrow"></div>
+          <div class="as-node end">End</div>
+        </div>
+        <div class="caption">All activities follow a Finish-to-Start (FS) relationship.</div>
+
+
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
+        </a>
+      </div>
+      <p class="footer-tagline">Skip the Line. Save the Time.</p>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Food Stall Pre-Order App. All rights reserved.</span>
+        <span>JRMSU Campus</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
