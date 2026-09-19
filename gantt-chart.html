@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gantt Chart | Food Stall Pre-Order App</title>
-  <meta name="description" content="10-week Gantt chart timeline for the Food Stall Pre-Order App, a campus canteen pre-ordering and management system." />
+  <meta name="description"
+    content="10-week Gantt chart timeline for the Food Stall Pre-Order App, a campus canteen pre-ordering and management system." />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
@@ -19,6 +21,7 @@
       padding: 26px 18px 36px;
       box-sizing: border-box;
     }
+
     .fg-brand-row {
       display: flex;
       justify-content: space-between;
@@ -26,17 +29,20 @@
       gap: 32px;
       margin-bottom: 22px;
     }
+
     .fg-brand-block {
       display: flex;
       align-items: center;
       gap: 16px;
     }
+
     .fg-logo svg {
       width: 66px;
       height: 66px;
       display: block;
       flex-shrink: 0;
     }
+
     .fg-title {
       margin: 0;
       font-size: 26px;
@@ -46,12 +52,14 @@
       color: #12304f;
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
     }
+
     .fg-sub {
       margin: 7px 0 5px;
       font-size: 13.5px;
       font-weight: 600;
       color: #12304f;
     }
+
     .fg-label {
       font-size: 13px;
       font-weight: 700;
@@ -60,12 +68,14 @@
       margin-top: 7px;
       text-transform: uppercase;
     }
+
     .fg-tag {
       position: relative;
       text-align: right;
       padding-right: 36px;
       padding-bottom: 18px;
     }
+
     .fg-tag p {
       margin: 0;
       font-family: "Segoe Script", "Brush Script MT", cursive;
@@ -73,6 +83,7 @@
       line-height: 1.25;
       color: #12304f;
     }
+
     .fg-underline {
       position: absolute;
       right: 36px;
@@ -81,6 +92,7 @@
       height: 18px;
       pointer-events: none;
     }
+
     .fg-mini {
       position: absolute;
       right: 2px;
@@ -89,6 +101,7 @@
       height: 22px;
       pointer-events: none;
     }
+
     .fg-scroll {
       width: 100%;
       overflow-x: auto;
@@ -97,6 +110,7 @@
       border-radius: 12px;
       background: #ffffff;
     }
+
     .fg-table {
       width: 100%;
       min-width: 836px;
@@ -104,14 +118,17 @@
       table-layout: fixed;
       background: #ffffff;
     }
+
     .fg-table th,
     .fg-table td {
       border: 1px solid #e4ebf3;
     }
+
     .fg-table thead th {
       background: #12304f;
       color: #ffffff;
     }
+
     .fg-idh {
       width: 44px;
       font-size: 13px;
@@ -119,6 +136,7 @@
       text-align: center;
       padding: 13px 6px;
     }
+
     .fg-acth {
       width: 230px;
       font-size: 13px;
@@ -126,6 +144,7 @@
       text-align: left;
       padding: 13px 14px;
     }
+
     .fg-durh {
       width: 82px;
       font-size: 13px;
@@ -133,6 +152,7 @@
       text-align: center;
       padding: 13px 6px;
     }
+
     .fg-weeksh {
       width: 480px;
       font-size: 13px;
@@ -142,6 +162,7 @@
       padding: 13px 6px;
       text-transform: uppercase;
     }
+
     .fg-weekrow td {
       background: #f6f9fc;
       color: #12304f;
@@ -151,14 +172,17 @@
       padding: 7px 0;
       border-top: 1px solid #dbe4ee;
     }
+
     .fg-weekrow td.fg-labels {
       background: #12304f;
       border-top: 0;
       border-bottom: 0;
     }
+
     .fg-table tbody td {
       padding: 0;
     }
+
     .fg-tdid {
       width: 44px;
       text-align: center;
@@ -166,6 +190,7 @@
       font-weight: 800;
       padding: 8px 4px;
     }
+
     .fg-tdact {
       width: 230px;
       text-align: left;
@@ -173,6 +198,7 @@
       font-weight: 700;
       padding: 10px 14px;
     }
+
     .fg-tddur {
       width: 82px;
       text-align: center;
@@ -180,23 +206,24 @@
       font-weight: 600;
       padding: 10px 4px;
     }
+
     .fg-tdtrack {
       padding: 0;
       position: relative;
     }
+
     .fg-track {
       position: relative;
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       height: 48px;
-      background-image: repeating-linear-gradient(
-        to right,
-        #e4ebf3 0,
-        #e4ebf3 1px,
-        transparent 1px,
-        transparent calc(100% / 10)
-      );
+      background-image: repeating-linear-gradient(to right,
+          #e4ebf3 0,
+          #e4ebf3 1px,
+          transparent 1px,
+          transparent calc(100% / 10));
     }
+
     .fg-bar {
       grid-row: 1;
       align-self: center;
@@ -205,24 +232,78 @@
       margin: 0 2px;
       box-shadow: 0 1px 2px rgba(18, 48, 79, 0.15);
     }
-    .g1 { grid-column: 1 / 2; }
-    .g2-3 { grid-column: 2 / 4; }
-    .g4-7 { grid-column: 4 / 8; }
-    .g8 { grid-column: 8 / 9; }
-    .g9 { grid-column: 9 / 10; }
-    .g10 { grid-column: 10 / 11; }
-    .fg-b-blue { background: #4169e1; }
-    .fg-b-green { background: #2e8b57; }
-    .fg-b-orange { background: #d2691e; }
-    .fg-b-red { background: #dc143c; }
-    .fg-b-purple { background: #8a2be2; }
-    .fg-b-teal { background: #008080; }
-    .fg-r1 td { background: #ebf8ff; }
-    .fg-r2 td { background: #f0fff4; }
-    .fg-r3 td { background: #fffaf0; }
-    .fg-r4 td { background: #fff5f5; }
-    .fg-r5 td { background: #faf5ff; }
-    .fg-r6 td { background: #e6fffa; }
+
+    .g1 {
+      grid-column: 1 / 2;
+    }
+
+    .g2-3 {
+      grid-column: 2 / 4;
+    }
+
+    .g4-7 {
+      grid-column: 4 / 8;
+    }
+
+    .g8 {
+      grid-column: 8 / 9;
+    }
+
+    .g9 {
+      grid-column: 9 / 10;
+    }
+
+    .g10 {
+      grid-column: 10 / 11;
+    }
+
+    .fg-b-blue {
+      background: #4169e1;
+    }
+
+    .fg-b-green {
+      background: #2e8b57;
+    }
+
+    .fg-b-orange {
+      background: #d2691e;
+    }
+
+    .fg-b-red {
+      background: #dc143c;
+    }
+
+    .fg-b-purple {
+      background: #8a2be2;
+    }
+
+    .fg-b-teal {
+      background: #008080;
+    }
+
+    .fg-r1 td {
+      background: #ebf8ff;
+    }
+
+    .fg-r2 td {
+      background: #f0fff4;
+    }
+
+    .fg-r3 td {
+      background: #fffaf0;
+    }
+
+    .fg-r4 td {
+      background: #fff5f5;
+    }
+
+    .fg-r5 td {
+      background: #faf5ff;
+    }
+
+    .fg-r6 td {
+      background: #e6fffa;
+    }
 
     .fg-footer {
       display: flex;
@@ -231,6 +312,7 @@
       align-items: stretch;
       flex-wrap: wrap;
     }
+
     .fg-infocard {
       flex: 1 1 340px;
       background: #f2f6fc;
@@ -240,27 +322,32 @@
       gap: 16px;
       align-items: flex-start;
     }
+
     .fg-docicon svg {
       width: 32px;
       height: 36px;
       flex-shrink: 0;
       display: block;
     }
+
     .fg-dur {
       font-size: 14.5px;
       font-weight: 600;
       color: #12304f;
       line-height: 1.45;
     }
+
     .fg-dur strong {
       font-weight: 800;
     }
+
     .fg-note {
       font-size: 12.5px;
       color: #3e5a76;
       margin-top: 7px;
       line-height: 1.55;
     }
+
     .fg-legendcard {
       flex: 1 1 360px;
       background: #ffffff;
@@ -268,11 +355,13 @@
       border-radius: 12px;
       padding: 18px 20px;
     }
+
     .fg-legend {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px 20px;
     }
+
     .fg-item {
       display: flex;
       align-items: center;
@@ -282,60 +371,90 @@
       font-weight: 500;
       min-width: 0;
     }
+
     .fg-dot {
       width: 15px;
       height: 15px;
       border-radius: 50%;
       flex-shrink: 0;
     }
-    .fg-dot-blue { background: #4169e1; }
-    .fg-dot-green { background: #2e8b57; }
-    .fg-dot-orange { background: #d2691e; }
-    .fg-dot-red { background: #dc143c; }
-    .fg-dot-purple { background: #8a2be2; }
-    .fg-dot-teal { background: #008080; }
+
+    .fg-dot-blue {
+      background: #4169e1;
+    }
+
+    .fg-dot-green {
+      background: #2e8b57;
+    }
+
+    .fg-dot-orange {
+      background: #d2691e;
+    }
+
+    .fg-dot-red {
+      background: #dc143c;
+    }
+
+    .fg-dot-purple {
+      background: #8a2be2;
+    }
+
+    .fg-dot-teal {
+      background: #008080;
+    }
 
     @media (max-width: 820px) {
       .fg-brand-row {
         flex-direction: column;
         gap: 14px;
       }
+
       .fg-tag {
         align-self: flex-end;
       }
+
       .fg-title {
         font-size: 21px;
       }
+
       .fg-label {
         letter-spacing: 5px;
       }
     }
+
     @media (max-width: 640px) {
       .fg-logo svg {
         width: 52px;
         height: 52px;
       }
+
       .fg-brand-block {
         gap: 12px;
       }
+
       .fg-sub {
         font-size: 12px;
       }
+
       .fg-label {
         letter-spacing: 4px;
       }
+
       .fg-tag p {
         font-size: 18px;
       }
+
       .fg-legend {
         grid-template-columns: 1fr 1fr;
       }
+
       .fg-infocard {
         flex-direction: column;
       }
     }
   </style>
 </head>
+
 <body data-page="gantt">
 
   <header class="site-header">
@@ -364,8 +483,10 @@
             <div class="fg-brand-block">
               <div class="fg-logo" aria-hidden="true">
                 <svg viewBox="0 0 120 120">
-                  <path d="M30 16 c2 7 -3 10 -1 17 M60 12 c2 7 -3 10 -1 17" stroke="#F27A1A" stroke-width="5" stroke-linecap="round" fill="none" />
-                  <path fill="#F27A1A" d="M28 40 h64 a10 10 0 0 1 10 10 v36 a10 10 0 0 1 -10 10 h-64 a10 10 0 0 1 -10 -10 v-36 a10 10 0 0 1 10 -10 z" />
+                  <path d="M30 16 c2 7 -3 10 -1 17 M60 12 c2 7 -3 10 -1 17" stroke="#F27A1A" stroke-width="5"
+                    stroke-linecap="round" fill="none" />
+                  <path fill="#F27A1A"
+                    d="M28 40 h64 a10 10 0 0 1 10 10 v36 a10 10 0 0 1 -10 10 h-64 a10 10 0 0 1 -10 -10 v-36 a10 10 0 0 1 10 -10 z" />
                   <path fill="#F27A1A" d="M34 40 l6 -10 h40 l6 10 z" />
                   <rect x="50" y="56" width="6" height="22" rx="3" fill="#ffffff" />
                   <rect x="63" y="56" width="6" height="22" rx="3" fill="#ffffff" />
@@ -379,12 +500,15 @@
             </div>
             <div class="fg-tag">
               <p>Skip the Line.<br />Save the Time.</p>
-              <svg class="fg-underline" viewBox="0 0 132 18" fill="none" stroke="#F27A1A" stroke-width="3.5" stroke-linecap="round" aria-hidden="true">
+              <svg class="fg-underline" viewBox="0 0 132 18" fill="none" stroke="#F27A1A" stroke-width="3.5"
+                stroke-linecap="round" aria-hidden="true">
                 <path d="M3 13 C 34 4, 66 17, 129 7" />
               </svg>
               <svg class="fg-mini" viewBox="0 0 120 120" aria-hidden="true">
-                <path d="M30 16 c2 7 -3 10 -1 17 M60 12 c2 7 -3 10 -1 17" stroke="#F27A1A" stroke-width="6" stroke-linecap="round" fill="none" />
-                <path fill="#F27A1A" d="M28 40 h64 a10 10 0 0 1 10 10 v36 a10 10 0 0 1 -10 10 h-64 a10 10 0 0 1 -10 -10 v-36 a10 10 0 0 1 10 -10 z" />
+                <path d="M30 16 c2 7 -3 10 -1 17 M60 12 c2 7 -3 10 -1 17" stroke="#F27A1A" stroke-width="6"
+                  stroke-linecap="round" fill="none" />
+                <path fill="#F27A1A"
+                  d="M28 40 h64 a10 10 0 0 1 10 10 v36 a10 10 0 0 1 -10 10 h-64 a10 10 0 0 1 -10 -10 v-36 a10 10 0 0 1 10 -10 z" />
                 <path fill="#F27A1A" d="M34 40 l6 -10 h40 l6 10 z" />
               </svg>
             </div>
@@ -401,8 +525,16 @@
                 </tr>
                 <tr class="fg-weekrow">
                   <td colspan="3" class="fg-labels"></td>
-                  <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
-                  <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
                 </tr>
               </thead>
               <tbody>
@@ -411,7 +543,9 @@
                   <td class="fg-tdact">Project Management &amp; Planning</td>
                   <td class="fg-tddur">1 week</td>
                   <td colspan="10" class="fg-tdtrack">
-                    <div class="fg-track"><div class="fg-bar fg-b-blue g1"></div></div>
+                    <div class="fg-track">
+                      <div class="fg-bar fg-b-blue g1"></div>
+                    </div>
                   </td>
                 </tr>
                 <tr class="fg-r2">
@@ -419,7 +553,9 @@
                   <td class="fg-tdact">System Design</td>
                   <td class="fg-tddur">2 weeks</td>
                   <td colspan="10" class="fg-tdtrack">
-                    <div class="fg-track"><div class="fg-bar fg-b-green g2-3"></div></div>
+                    <div class="fg-track">
+                      <div class="fg-bar fg-b-green g2-3"></div>
+                    </div>
                   </td>
                 </tr>
                 <tr class="fg-r3">
@@ -427,7 +563,9 @@
                   <td class="fg-tdact">System Development</td>
                   <td class="fg-tddur">4 weeks</td>
                   <td colspan="10" class="fg-tdtrack">
-                    <div class="fg-track"><div class="fg-bar fg-b-orange g4-7"></div></div>
+                    <div class="fg-track">
+                      <div class="fg-bar fg-b-orange g4-7"></div>
+                    </div>
                   </td>
                 </tr>
                 <tr class="fg-r4">
@@ -435,7 +573,9 @@
                   <td class="fg-tdact">System Testing &amp; QA</td>
                   <td class="fg-tddur">1 week</td>
                   <td colspan="10" class="fg-tdtrack">
-                    <div class="fg-track"><div class="fg-bar fg-b-red g8"></div></div>
+                    <div class="fg-track">
+                      <div class="fg-bar fg-b-red g8"></div>
+                    </div>
                   </td>
                 </tr>
                 <tr class="fg-r5">
@@ -443,7 +583,9 @@
                   <td class="fg-tdact">Deployment &amp; Implementation</td>
                   <td class="fg-tddur">1 week</td>
                   <td colspan="10" class="fg-tdtrack">
-                    <div class="fg-track"><div class="fg-bar fg-b-purple g9"></div></div>
+                    <div class="fg-track">
+                      <div class="fg-bar fg-b-purple g9"></div>
+                    </div>
                   </td>
                 </tr>
                 <tr class="fg-r6">
@@ -451,7 +593,9 @@
                   <td class="fg-tdact">Documentation &amp; Project Closure</td>
                   <td class="fg-tddur">1 week</td>
                   <td colspan="10" class="fg-tdtrack">
-                    <div class="fg-track"><div class="fg-bar fg-b-teal g10"></div></div>
+                    <div class="fg-track">
+                      <div class="fg-bar fg-b-teal g10"></div>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -461,7 +605,8 @@
           <div class="fg-footer">
             <div class="fg-infocard">
               <div class="fg-docicon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#12304F" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#12304F" stroke-width="1.7" stroke-linejoin="round"
+                  stroke-linecap="round">
                   <path d="M7 2.5h7.5L19 7v14.5H7z" />
                   <path d="M14.5 2.5V7H19" />
                   <line x1="10.5" y1="12" x2="17" y2="12" />
@@ -471,7 +616,8 @@
               </div>
               <div class="fg-infotext">
                 <div class="fg-dur"><strong>Estimated Project Duration:</strong> 10 weeks</div>
-                <p class="fg-note">Note: The project runs over 10 weeks (September 7 &ndash; November 9, 2026). All major activities follow a Finish-to-Start (FS) relationship.</p>
+                <p class="fg-note">Note: The project runs over 10 weeks (September 7 &ndash; November 9, 2026). All
+                  major activities follow a Finish-to-Start (FS) relationship.</p>
               </div>
             </div>
 
@@ -495,7 +641,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-brand">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" id="footer-app-link">
           <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
         </a>
       </div>
@@ -509,4 +655,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -42,20 +42,33 @@
     socials.className = "footer-social";
 
     var networks = [
-      ["Facebook", '<svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.3l.4-3h-2.7V9.1c0-.9.3-1.5 1.6-1.5h1.2V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3H10.6v7h2.9z"/></svg>'],
-      ["Instagram", '<svg viewBox="0 0 24 24"><path d="M12 8.7a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zM12 6.9a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2zm5.3-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/><path d="M4 19.6V8.4A4.4 4.4 0 0 1 8.4 4h7.2A4.4 4.4 0 0 1 20 8.4v11.2a4.4 4.4 0 0 1-4.4 4.4H8.4A4.4 4.4 0 0 1 4 19.6zm2.2.3a2.2 2.2 0 0 0 2.2 2.2h7.2a2.2 2.2 0 0 0 2.2-2.2V8.4a2.2 2.2 0 0 0-2.2-2.2H8.4a2.2 2.2 0 0 0-2.2 2.2v11.5z"/></svg>'],
-      ["YouTube", '<svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8L15.6 12 10 15.2z"/></svg>'],
-      ["X", '<svg viewBox="0 0 24 24"><path d="M17.7 3H20.5l-6.1 7 7.2 9.5h-5.6l-4.4-5.8-5 5.8H3.8l6.5-7.5L3.5 3h5.7l4 5.3L17.7 3zm-1 15.3h1.6L7.9 4.6H6.2L16.7 18.3z"/></svg>'],
-      ["LinkedIn", '<svg viewBox="0 0 24 24"><path d="M4.9 8.2h3v9H4.9v-9zM6.4 4.3a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM9.4 8.2h2.9v1.3h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7v4.6h-3v-4.1c0-1 0-2.3-1.4-2.3s-1.7 1.1-1.7 2.3v4.1h-3v-9z"/></svg>'],
-      ["TikTok", '<svg viewBox="0 0 24 24"><path d="M16.6 4h.6a2.6 2.6 0 0 0 .5 3.1 5.6 5.6 0 0 0 2.9.9v2.7a6.6 6.6 0 0 1-2.9-.7v5.9A5.8 5.8 0 1 1 9.7 11v.02a5.8 5.8 0 0 1 .5 0V13.6a3.1 3.1 0 1 0 3.1 3.1V4h.8c0 .2.1.4.1.6h2.4z"/></svg>']
+      ["Facebook", "https://www.facebook.com/", "fb://",
+        '<svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.3l.4-3h-2.7V9.1c0-.9.3-1.5 1.6-1.5h1.2V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3H10.6v7h2.9z"/></svg>'],
+      ["Instagram", "https://www.instagram.com/", "instagram://",
+        '<svg viewBox="0 0 24 24"><path d="M12 8.7a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zM12 6.9a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2zm5.3-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/><path d="M4 19.6V8.4A4.4 4.4 0 0 1 8.4 4h7.2A4.4 4.4 0 0 1 20 8.4v11.2a4.4 4.4 0 0 1-4.4 4.4H8.4A4.4 4.4 0 0 1 4 19.6zm2.2.3a2.2 2.2 0 0 0 2.2 2.2h7.2a2.2 2.2 0 0 0 2.2-2.2V8.4a2.2 2.2 0 0 0-2.2-2.2H8.4a2.2 2.2 0 0 0-2.2 2.2v11.5z"/></svg>'],
+      ["YouTube", "https://www.youtube.com/", "youtube://",
+        '<svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8L15.6 12 10 15.2z"/></svg>'],
+      ["X", "https://x.com/", "twitter://",
+        '<svg viewBox="0 0 24 24"><path d="M17.7 3H20.5l-6.1 7 7.2 9.5h-5.6l-4.4-5.8-5 5.8H3.8l6.5-7.5L3.5 3h5.7l4 5.3L17.7 3zm-1 15.3h1.6L7.9 4.6H6.2L16.7 18.3z"/></svg>'],
+      ["LinkedIn", "https://www.linkedin.com/", "linkedin://",
+        '<svg viewBox="0 0 24 24"><path d="M4.9 8.2h3v9H4.9v-9zM6.4 4.3a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM9.4 8.2h2.9v1.3h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7v4.6h-3v-4.1c0-1 0-2.3-1.4-2.3s-1.7 1.1-1.7 2.3v4.1h-3v-9z"/></svg>'],
+      ["TikTok", "https://www.tiktok.com/", "tiktok://",
+        '<svg viewBox="0 0 24 24"><path d="M16.6 4h.6a2.6 2.6 0 0 0 .5 3.1 5.6 5.6 0 0 0 2.9.9v2.7a6.6 6.6 0 0 1-2.9-.7v5.9A5.8 5.8 0 1 1 9.7 11v.02a5.8 5.8 0 0 1 .5 0V13.6a3.1 3.1 0 1 0 3.1 3.1V4h.8c0 .2.1.4.1.6h2.4z"/></svg>']
     ];
+
+    var isMobile =
+      /Android|iPhone|iPad|iPod|Windows Phone|webOS|BlackBerry|Mobile/i.test(
+        navigator.userAgent || navigator.vendor || window.opera || ""
+      ) ||
+      (typeof window.orientation !== "undefined" && window.orientation !== null);
 
     networks.forEach(function (net) {
       var a = document.createElement("a");
-      a.href = "#";
+      a.href = isMobile ? net[2] : net[1];
       a.setAttribute("aria-label", net[0]);
-      a.title = net[0];
-      a.innerHTML = net[1];
+      a.title = isMobile ? "Open " + net[0] + " app" : net[0];
+      if (!isMobile) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+      a.innerHTML = net[3];
       socials.appendChild(a);
     });
 
@@ -123,7 +136,7 @@
     revealTargets.forEach(function (el) { observer.observe(el); });
   }
 
-/* ---- Card spotlight + 3D tilt (aura + mouse-follow) ---- */
+  /* ---- Card spotlight + 3D tilt (aura + mouse-follow) ---- */
   if (!reduceMotion) {
     document.querySelectorAll(".card, .benefit-box").forEach(function (card) {
       card.addEventListener("mousemove", function (e) {
@@ -273,5 +286,22 @@
       if (toast) toast.classList.add("show");
       contactForm2.reset();
     });
+  }
+
+  /* ---- Footer logo: app on mobile, site on desktop ---- */
+  var footerAppLink = document.getElementById("footer-app-link");
+  if (footerAppLink) {
+    var isMobile =
+      /Android|iPhone|iPad|iPod|Windows Phone|webOS|BlackBerry|Mobile/i.test(
+        navigator.userAgent || navigator.vendor || window.opera || ""
+      ) ||
+      (typeof window.orientation !== "undefined" && window.orientation !== null);
+    if (isMobile) {
+      footerAppLink.href = "foodstall://";
+      footerAppLink.title = "Open the Food Stall Pre-Order app";
+    } else {
+      footerAppLink.href = "index.html";
+      footerAppLink.title = "Go to Home";
+    }
   }
 })();
