@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Organization | Food Stall Pre-Order App</title>
+  <meta name="description"
+    content="Laboratory Exercise 3 — Project Team Organization for the Food Stall Pre-Order App." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Org chart (scoped: org-) */
+    .org-chart { max-width: 1080px; margin: 0 auto; text-align: center; }
+    .org-top { display: flex; justify-content: center; }
+    .org-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+    }
+    .org-card .org-role {
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .org-card h5 { font-size: 17px; margin-bottom: 8px; color: var(--charcoal); }
+    .org-card ul { list-style: none; padding: 0; margin: 0; }
+    .org-card ul li { font-size: 13.5px; color: var(--shade-2); padding: 2px 0; }
+    .org-card.pm { border-top: 4px solid #4169e1; min-width: 320px; }
+    .org-card.pm .org-role { background: #4169e1; }
+    .org-stem { width: 3px; height: 34px; background: #cbd5e1; margin: 0 auto; }
+    .org-bus { height: 3px; background: #cbd5e1; margin: 0 auto; max-width: 86%; }
+    .org-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 0; }
+    .org-leg { width: 3px; height: 26px; background: #cbd5e1; margin: 0 auto; }
+    .org-card.r1 { border-top: 4px solid #2e8b57; } .org-card.r1 .org-role { background: #2e8b57; }
+    .org-card.r2 { border-top: 4px solid #8a2be2; } .org-card.r2 .org-role { background: #8a2be2; }
+    .org-card.r3 { border-top: 4px solid #d2691e; } .org-card.r3 .org-role { background: #d2691e; }
+    .org-card.r4 { border-top: 4px solid #dc143c; } .org-card.r4 .org-role { background: #dc143c; }
+    @media (max-width: 900px) {
+      .org-row { grid-template-columns: 1fr 1fr; }
+      .org-bus, .org-leg { display: none; }
+      .org-stem { display: none; }
+      .org-row { margin-top: 18px; }
+    }
+    @media (max-width: 560px) {
+      .org-row { grid-template-columns: 1fr; }
+      .org-card.pm { min-width: 0; }
+    }
+  </style>
+</head>
+
+<body data-page="org">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-menu">
+        <a href="index.html" data-nav="home">Home</a>
+        
+        <a href="wbs-diagram.html" data-nav="wbs">WBS Diagram</a>
+        <a href="activity-sequencing.html" data-nav="sequencing">Activity Sequencing</a>
+        <a href="activity-duration.html" data-nav="duration">Activity Duration</a>
+        <a href="gantt-chart.html" data-nav="gantt">Gantt Chart</a>
+        <a href="team-organization.html" data-nav="org">Team Org</a>
+        <a href="team-contact.html" data-nav="team">Team &amp; Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+
+    <!-- PART 1 -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Team Member Assessment</h2>
+          <p class="section-sub">Each member&rsquo;s strengths, preferred tasks, and the project role that fits
+            them best.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:180px;">Team Member</th>
+                <th>Skills / Strengths</th>
+                <th>Preferred Tasks</th>
+                <th style="width:170px;">Assigned Project Role</th>
+                <th>Reason for Assignment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="num">Jainnah Darunday</td>
+                <td>Organized, communicates well, keeps the group on track</td>
+                <td>Planning, scheduling, coordinating tasks</td>
+                <td>Project Manager</td>
+                <td>Her coordinating and communication strengths suit leading the team and the timeline.</td>
+              </tr>
+              <tr>
+                <td class="num">Maria Luz Subrado</td>
+                <td>Creative, attentive to visual detail, user-focused</td>
+                <td>Designing layouts, wireframes, and user flow</td>
+                <td>UI/UX Designer</td>
+                <td>Her design skill suits making the app easy and pleasant to use.</td>
+              </tr>
+              <tr>
+                <td class="num">Marieconae Kairus Salmorin</td>
+                <td>Logical, good at problem-solving, comfortable with data</td>
+                <td>Server logic, database setup, vendor dashboard</td>
+                <td>Back-End Developer (also Database/Technical Role)</td>
+                <td>Her technical and data skills suit building the server and database.</td>
+              </tr>
+              <tr>
+                <td class="num">John Harvy Baje</td>
+                <td>Strong coding skills, detail-oriented in interfaces</td>
+                <td>Building screens, connecting design to code</td>
+                <td>Front-End Developer</td>
+                <td>His coding skills suit turning the designs into working customer screens.</td>
+              </tr>
+              <tr>
+                <td class="num">Vine Mary Mayo</td>
+                <td>Careful, thorough, good at writing and reporting</td>
+                <td>Testing, bug-finding, preparing documents and the pitch</td>
+                <td>QA Tester and Documentation Lead</td>
+                <td>Her attention to detail suits testing and documentation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 2 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Assign Project Team Roles</h2>
+          <p class="section-sub">Roles were combined because the team has five members. The Project Manager also
+            covers the System/Business Analyst role, and the Back-End Developer also covers the Database/Technical
+            role.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:190px;">Project Role</th>
+                <th style="width:220px;">Assigned Member</th>
+                <th>Major Responsibilities</th>
+                <th>Expected Deliverables</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="num">Project Manager</td>
+                <td>Jainnah Darunday</td>
+                <td>Oversees the timeline, assigns and tracks tasks, leads meetings, and communicates with the
+                  group and the instructor</td>
+                <td>Project plan, schedule, progress updates</td>
+              </tr>
+              <tr>
+                <td class="num">System/Business Analyst</td>
+                <td>Jainnah Darunday <em>(combined role)</em></td>
+                <td>Gathers requirements from stalls and customers, and defines how pre-ordering works</td>
+                <td>Requirements list, use cases, process flow</td>
+              </tr>
+              <tr>
+                <td class="num">UI/UX Designer</td>
+                <td>Maria Luz Subrado</td>
+                <td>Designs the app interface and user experience flow for browsing, ordering, and pickup</td>
+                <td>Wireframes, prototype, style guide</td>
+              </tr>
+              <tr>
+                <td class="num">Developer/Programmer</td>
+                <td>John Harvy Baje (front-end);<br />Marieconae Kairus Salmorin (back-end)</td>
+                <td>John builds the customer-facing screens. Marieconae builds the server logic and vendor
+                  dashboard.</td>
+                <td>Working customer app, working back-end, vendor dashboard</td>
+              </tr>
+              <tr>
+                <td class="num">Database/Technical Role</td>
+                <td>Marieconae Kairus Salmorin <em>(combined role)</em></td>
+                <td>Designs and maintains the database for menus, orders, and vendors, and keeps the data secure
+                </td>
+                <td>ERD, database, data security setup</td>
+              </tr>
+              <tr>
+                <td class="num">QA/Tester</td>
+                <td>Vine Mary Mayo</td>
+                <td>Tests the app, reports and tracks bugs, checks fixes, and prepares the documentation and
+                  pitch</td>
+                <td>Test plan, test cases, bug reports, documentation, pitch presentation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Project Team Organizational Chart</h2>
+          <p class="section-sub">Project: Food Stall Pre-Order App</p>
+        </div>
+
+        <div class="org-chart">
+          <div class="org-top">
+            <div class="org-card pm">
+              <span class="org-role">Project Manager</span>
+              <h5>Jainnah Darunday</h5>
+              <ul>
+                <li>Oversees the timeline</li>
+                <li>Coordinates tasks</li>
+                <li>Communicates with the group</li>
+                <li>Also covers System/Business Analyst duties</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="org-stem"></div>
+          <div class="org-bus"></div>
+
+          <div class="org-row">
+            <div>
+              <div class="org-leg"></div>
+              <div class="org-card r1">
+                <span class="org-role">UI/UX Designer</span>
+                <h5>Maria Luz Subrado</h5>
+                <ul>
+                  <li>Designs the app interface</li>
+                  <li>Plans the user experience flow</li>
+                  <li>Creates wireframes and prototype</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="org-leg"></div>
+              <div class="org-card r2">
+                <span class="org-role">Back-End Developer</span>
+                <h5>Marieconae Kairus Salmorin</h5>
+                <ul>
+                  <li>Builds the server and database</li>
+                  <li>Builds the vendor dashboard</li>
+                  <li>Also covers Database/Technical role</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="org-leg"></div>
+              <div class="org-card r3">
+                <span class="org-role">Front-End Developer</span>
+                <h5>John Harvy Baje</h5>
+                <ul>
+                  <li>Builds customer-facing app screens</li>
+                  <li>Turns designs into working code</li>
+                  <li>Works with the back-end on integration</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="org-leg"></div>
+              <div class="org-card r4">
+                <span class="org-role">QA Tester &amp; Doc Lead</span>
+                <h5>Vine Mary Mayo</h5>
+                <ul>
+                  <li>Tests the app and fixes bugs</li>
+                  <li>Prepares reports and documentation</li>
+                  <li>Prepares the pitch presentation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 4 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Connect Roles to the Project Schedule</h2>
+          <p class="section-sub">Who leads and who supports each project activity.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:200px;">Project Activity</th>
+                <th style="width:230px;">Responsible Member</th>
+                <th style="width:220px;">Role</th>
+                <th>Supporting Member/s</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="num">Requirements Gathering</td>
+                <td>Jainnah Darunday</td>
+                <td>Project Manager / Analyst</td>
+                <td>Maria Luz Subrado</td>
+              </tr>
+              <tr>
+                <td class="num">System Analysis</td>
+                <td>Jainnah Darunday</td>
+                <td>Project Manager / Analyst</td>
+                <td>Marieconae Kairus Salmorin</td>
+              </tr>
+              <tr>
+                <td class="num">UI/UX Design</td>
+                <td>Maria Luz Subrado</td>
+                <td>UI/UX Designer</td>
+                <td>John Harvy Baje</td>
+              </tr>
+              <tr>
+                <td class="num">Database Design</td>
+                <td>Marieconae Kairus Salmorin</td>
+                <td>Back-End Developer / Database</td>
+                <td>Jainnah Darunday</td>
+              </tr>
+              <tr>
+                <td class="num">Development</td>
+                <td>John Harvy Baje and Marieconae Kairus Salmorin</td>
+                <td>Front-End and Back-End Developers</td>
+                <td>Maria Luz Subrado</td>
+              </tr>
+              <tr>
+                <td class="num">Testing</td>
+                <td>Vine Mary Mayo</td>
+                <td>QA Tester</td>
+                <td>John Harvy Baje, Marieconae Kairus Salmorin</td>
+              </tr>
+              <tr>
+                <td class="num">Documentation</td>
+                <td>Vine Mary Mayo</td>
+                <td>Documentation Lead</td>
+                <td>Jainnah Darunday</td>
+              </tr>
+              <tr>
+                <td class="num">Deployment/Presentation</td>
+                <td>Jainnah Darunday</td>
+                <td>Project Manager</td>
+                <td>Whole team, with Vine Mary Mayo on the pitch</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" id="footer-app-link">
+          <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
+        </a>
+      </div>
+      <p class="footer-tagline">Skip the Line. Save the Time.</p>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Food Stall Pre-Order App. All rights reserved.</span>
+        <span>JRMSU Campus</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
