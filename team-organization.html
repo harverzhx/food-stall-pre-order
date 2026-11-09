@@ -14,8 +14,17 @@
   <link rel="stylesheet" href="css/style.css" />
   <style>
     /* Org chart (scoped: org-) */
-    .org-chart { max-width: 1080px; margin: 0 auto; text-align: center; }
-    .org-top { display: flex; justify-content: center; }
+    .org-chart {
+      max-width: 1080px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .org-top {
+      display: flex;
+      justify-content: center;
+    }
+
     .org-card {
       background: var(--white);
       border: 1px solid var(--line);
@@ -24,6 +33,7 @@
       box-shadow: var(--shadow-sm);
       text-align: center;
     }
+
     .org-card .org-role {
       font-size: 12.5px;
       font-weight: 700;
@@ -35,28 +45,121 @@
       border-radius: 999px;
       margin-bottom: 8px;
     }
-    .org-card h5 { font-size: 17px; margin-bottom: 8px; color: var(--charcoal); }
-    .org-card ul { list-style: none; padding: 0; margin: 0; }
-    .org-card ul li { font-size: 13.5px; color: var(--shade-2); padding: 2px 0; }
-    .org-card.pm { border-top: 4px solid #4169e1; min-width: 320px; }
-    .org-card.pm .org-role { background: #4169e1; }
-    .org-stem { width: 3px; height: 34px; background: #cbd5e1; margin: 0 auto; }
-    .org-bus { height: 3px; background: #cbd5e1; margin: 0 auto; max-width: 86%; }
-    .org-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 0; }
-    .org-leg { width: 3px; height: 26px; background: #cbd5e1; margin: 0 auto; }
-    .org-card.r1 { border-top: 4px solid #2e8b57; } .org-card.r1 .org-role { background: #2e8b57; }
-    .org-card.r2 { border-top: 4px solid #8a2be2; } .org-card.r2 .org-role { background: #8a2be2; }
-    .org-card.r3 { border-top: 4px solid #d2691e; } .org-card.r3 .org-role { background: #d2691e; }
-    .org-card.r4 { border-top: 4px solid #dc143c; } .org-card.r4 .org-role { background: #dc143c; }
-    @media (max-width: 900px) {
-      .org-row { grid-template-columns: 1fr 1fr; }
-      .org-bus, .org-leg { display: none; }
-      .org-stem { display: none; }
-      .org-row { margin-top: 18px; }
+
+    .org-card h5 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: var(--charcoal);
     }
+
+    .org-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .org-card ul li {
+      font-size: 13.5px;
+      color: var(--shade-2);
+      padding: 2px 0;
+    }
+
+    .org-card.pm {
+      border-top: 4px solid #4169e1;
+      min-width: 320px;
+    }
+
+    .org-card.pm .org-role {
+      background: #4169e1;
+    }
+
+    .org-stem {
+      width: 3px;
+      height: 34px;
+      background: #cbd5e1;
+      margin: 0 auto;
+    }
+
+    .org-bus {
+      height: 3px;
+      background: #cbd5e1;
+      margin: 0 auto;
+      max-width: 86%;
+    }
+
+    .org-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 0;
+    }
+
+    .org-leg {
+      width: 3px;
+      height: 26px;
+      background: #cbd5e1;
+      margin: 0 auto;
+    }
+
+    .org-card.r1 {
+      border-top: 4px solid #2e8b57;
+    }
+
+    .org-card.r1 .org-role {
+      background: #2e8b57;
+    }
+
+    .org-card.r2 {
+      border-top: 4px solid #8a2be2;
+    }
+
+    .org-card.r2 .org-role {
+      background: #8a2be2;
+    }
+
+    .org-card.r3 {
+      border-top: 4px solid #d2691e;
+    }
+
+    .org-card.r3 .org-role {
+      background: #d2691e;
+    }
+
+    .org-card.r4 {
+      border-top: 4px solid #dc143c;
+    }
+
+    .org-card.r4 .org-role {
+      background: #dc143c;
+    }
+
+    @media (max-width: 900px) {
+      .org-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .org-bus,
+      .org-leg {
+        display: none;
+      }
+
+      .org-stem {
+        display: none;
+      }
+
+      .org-row {
+        margin-top: 18px;
+      }
+    }
+
     @media (max-width: 560px) {
-      .org-row { grid-template-columns: 1fr; }
-      .org-card.pm { min-width: 0; }
+      .org-row {
+        grid-template-columns: 1fr;
+      }
+
+      .org-card.pm {
+        min-width: 0;
+      }
     }
   </style>
 </head>
@@ -70,12 +173,8 @@
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <nav class="nav-menu">
-        <a href="index.html" data-nav="home">Project Goal</a>
-        
-        <a href="wbs-diagram.html" data-nav="wbs">WBS Diagram</a>
-        <a href="activity-sequencing.html" data-nav="sequencing">Activity Sequencing</a>
-        <a href="activity-duration.html" data-nav="duration">Activity Duration</a>
-        <a href="gantt-chart.html" data-nav="gantt">Gantt Chart</a>
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="project_goal.html" data-nav="gantt">Project Goal</a>
         <a href="team-organization.html" data-nav="org">Team Org</a>
         <a href="team-contact.html" data-nav="team">Team &amp; Contact</a>
       </nav>

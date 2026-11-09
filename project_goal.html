@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project Goals</title>
+</head>
+
+<body data-page="wbs">
+
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav class="nav-menu">
+                <a href="index.html" data-nav="home">Home</a>
+                <a href="project_goal.html" data-nav="gantt">Project Goal</a>
+                <a href="team-organization.html" data-nav="org">Team Org</a>
+                <a href="team-contact.html" data-nav="team">Team &amp; Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="wbs-hero">
+                    <span class="kicker">Food Stall Pre-Order App</span>
+                    <p class="main-title">Campus Canteen Pre-Ordering &amp; Management System</p>
+                    <h2>WORK BREAKDOWN STRUCTURE (WBS)</h2>
+                </div>
+
+                <div class="wbs-ladder" aria-hidden="true">
+                    <span class="ladder-line c"></span>
+                    <span class="ladder-line w"></span>
+                    <div class="ladder-cols">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+
+                <div class="wbs-cols">
+                    <div class="wbs-colx c1">
+                        <div class="wbs-col-head">
+                            <div class="wbs-num">1.0</div>
+                            <h6>Project Management &amp; Planning</h6>
+                        </div>
+                        <div class="wbs-col-item">1.1 Define project scope &amp; objectives</div>
+                        <div class="wbs-col-item">1.2 Identify Stakeholders &amp; Users</div>
+                        <div class="wbs-col-item">1.3 Gather Initial Requirements</div>
+                        <div class="wbs-col-item">1.4 Develop Project Schedule &amp; Risk Plan</div>
+                    </div>
+                    <div class="wbs-colx c2">
+                        <div class="wbs-col-head">
+                            <div class="wbs-num">2.0</div>
+                            <h6>System Design</h6>
+                        </div>
+                        <div class="wbs-col-item">2.1 Design system architecture</div>
+                        <div class="wbs-col-item">2.2 Design Database Schema (ERD)</div>
+                        <div class="wbs-col-item">2.3 Design UI/UX Wireframes (Figma)</div>
+                        <div class="wbs-col-item">2.4 Design Order &amp; Payment Workflow</div>
+                    </div>
+                    <div class="wbs-colx c3">
+                        <div class="wbs-col-head">
+                            <div class="wbs-num">3.0</div>
+                            <h6>System Development</h6>
+                        </div>
+                        <div class="wbs-col-item">3.1 Develop User Auth &amp; Profiles</div>
+                        <div class="wbs-col-item">3.2 Develop Customer App (Pre-Order &amp; Menu)</div>
+                        <div class="wbs-col-item">3.3 Develop Vendor Dashboard (Stock &amp; Sales)</div>
+                        <div class="wbs-col-item">3.4 Develop Back-End APIs &amp; Database Connect</div>
+                    </div>
+                    <div class="wbs-colx c4">
+                        <div class="wbs-col-head">
+                            <div class="wbs-num">4.0</div>
+                            <h6>System Testing &amp; QA</h6>
+                        </div>
+                        <div class="wbs-col-item">4.1 Prepare Test Cases &amp; Plan</div>
+                        <div class="wbs-col-item">4.2 Conduct Unit &amp; System Testing</div>
+                        <div class="wbs-col-item">4.3 Conduct QR / Order Scanning Tests</div>
+                        <div class="wbs-col-item">4.4 Perform User Acceptance Testing (UAT)</div>
+                    </div>
+                    <div class="wbs-colx c5">
+                        <div class="wbs-col-head">
+                            <div class="wbs-num">5.0</div>
+                            <h6>Deployment &amp; Implementation</h6>
+                        </div>
+                        <div class="wbs-col-item">5.1 Prepare Production Environment</div>
+                        <div class="wbs-col-item">5.2 Deploy App &amp; Database (Cloud Host)</div>
+                        <div class="wbs-col-item">5.3 Vendor Onboarding &amp; Training</div>
+                        <div class="wbs-col-item">5.4 Launch App to Students &amp; Campus</div>
+                    </div>
+                    <div class="wbs-colx c6">
+                        <div class="wbs-col-head">
+                            <div class="wbs-num">6.0</div>
+                            <h6>Documentation &amp; Project Closure</h6>
+                        </div>
+                        <div class="wbs-col-item">6.1 Prepare Technical &amp; User Manuals</div>
+                        <div class="wbs-col-item">6.2 Conduct Final Presentation / Demo</div>
+                        <div class="wbs-col-item">6.3 Turn Over System to School Canteen</div>
+                        <div class="wbs-col-item">6.4 Obtain Final Project Acceptance</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <body data-page="sequencing">
+
+        <main>
+            <section class="section" id="activity-sequencing">
+                <div class="container text-center">
+                    <h2 class="section-title">Activity Sequencing</h2>
+                    <p class="section-sub">Vertical activity sequence from START to END, aligned with the
+                        project&rsquo;s 6-phase
+                        WBS. Each activity is completed sequentially before moving to the next phase.</p>
+                </div>
+                <div class="container">
+                    <div class="as-diagram">
+                        <div class="as-node start">Start</div>
+                        <div class="as-arrow"></div>
+
+                        <article class="as-card c1">
+                            <div class="as-card-head">
+                                <div class="as-num">1.0</div>
+                                <h3>Project Management &amp; Planning</h3>
+                            </div>
+                            <div class="as-tasks">
+                                <div class="as-task">1.1 Define project scope &amp; objectives</div>
+                                <div class="as-task">1.2 Identify Stakeholders &amp; Users</div>
+                                <div class="as-task">1.3 Gather Initial Requirements</div>
+                                <div class="as-task">1.4 Develop Project Schedule &amp; Risk Plan</div>
+                            </div>
+                        </article>
+
+                        <div class="as-arrow"></div>
+                        <article class="as-card c2">
+                            <div class="as-card-head">
+                                <div class="as-num">2.0</div>
+                                <h3>System Design</h3>
+                            </div>
+                            <div class="as-tasks">
+                                <div class="as-task">2.1 Design system architecture</div>
+                                <div class="as-task">2.2 Design Database Schema (ERD)</div>
+                                <div class="as-task">2.3 Design UI/UX Wireframes (Figma)</div>
+                                <div class="as-task">2.4 Design Order &amp; Payment Workflow</div>
+                            </div>
+                        </article>
+
+                        <div class="as-arrow"></div>
+                        <article class="as-card c3">
+                            <div class="as-card-head">
+                                <div class="as-num">3.0</div>
+                                <h3>System Development</h3>
+                            </div>
+                            <div class="as-tasks">
+                                <div class="as-task">3.1 Develop User Auth &amp; Profiles</div>
+                                <div class="as-task">3.2 Develop Customer App (Pre-Order &amp; Menu)</div>
+                                <div class="as-task">3.3 Develop Vendor Dashboard (Stock &amp; Sales)</div>
+                                <div class="as-task">3.4 Develop Back-End APIs &amp; Database Connect</div>
+                            </div>
+                        </article>
+
+                        <div class="as-arrow"></div>
+                        <article class="as-card c4">
+                            <div class="as-card-head">
+                                <div class="as-num">4.0</div>
+                                <h3>System Testing &amp; QA</h3>
+                            </div>
+                            <div class="as-tasks">
+                                <div class="as-task">4.1 Prepare Test Cases &amp; Plan</div>
+                                <div class="as-task">4.2 Conduct Unit &amp; System Testing</div>
+                                <div class="as-task">4.3 Conduct QR / Order Scanning Tests</div>
+                                <div class="as-task">4.4 Perform User Acceptance Testing (UAT)</div>
+                            </div>
+                        </article>
+
+                        <div class="as-arrow"></div>
+                        <article class="as-card c5">
+                            <div class="as-card-head">
+                                <div class="as-num">5.0</div>
+                                <h3>Deployment &amp; Implementation</h3>
+                            </div>
+                            <div class="as-tasks">
+                                <div class="as-task">5.1 Prepare Production Environment</div>
+                                <div class="as-task">5.2 Deploy App &amp; Database (Cloud Host)</div>
+                                <div class="as-task">5.3 Vendor Onboarding &amp; Training</div>
+                                <div class="as-task">5.4 Launch App to Students &amp; Campus</div>
+                            </div>
+                        </article>
+
+                        <div class="as-arrow"></div>
+                        <article class="as-card c6">
+                            <div class="as-card-head">
+                                <div class="as-num">6.0</div>
+                                <h3>Documentation &amp; Project Closure</h3>
+                            </div>
+                            <div class="as-tasks">
+                                <div class="as-task">6.1 Prepare Technical &amp; User Manuals</div>
+                                <div class="as-task">6.2 Conduct Final Presentation / Demo</div>
+                                <div class="as-task">6.3 Turn Over System to School Canteen</div>
+                                <div class="as-task">6.4 Obtain Final Project Acceptance</div>
+                            </div>
+                        </article>
+
+                        <div class="as-arrow"></div>
+                        <div class="as-node end">End</div>
+                    </div>
+                    <div class="caption">All activities follow a Finish-to-Start (FS) relationship.</div>
+
+
+                </div>
+            </section>
+
+
+
+
+        </main>
+    </body>
+
+    <body data-page="duration">
+
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-title">Activity Duration Estimation</h2>
+                        <p class="section-sub">Estimated duration of each major activity, key activities included, and
+                            predecessor
+                            relationships (Finish-to-Start).</p>
+                    </div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Major Activity</th>
+                                    <th>Key Activities Included</th>
+                                    <th>Estimated Duration</th>
+                                    <th>Predecessor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="num">1.0</td>
+                                    <td>Project Management &amp; Planning</td>
+                                    <td>1.1 Define project scope &amp; objectives; 1.2 Identify Stakeholders &amp;
+                                        Users; 1.3 Gather Initial
+                                        Requirements; 1.4 Develop Project Schedule &amp; Risk Plan</td>
+                                    <td>Week 1</td>
+                                    <td>— (Start)</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">2.0</td>
+                                    <td>System Design</td>
+                                    <td>2.1 Design system architecture; 2.2 Design Database Schema (ERD); 2.3 Design
+                                        UI/UX Wireframes
+                                        (Figma); 2.4 Design Order &amp; Payment Workflow</td>
+                                    <td>Weeks 2–3</td>
+                                    <td>1.0 (FS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">3.0</td>
+                                    <td>System Development</td>
+                                    <td>3.1 Develop User Auth &amp; Profiles; 3.2 Develop Customer App (Pre-Order &amp;
+                                        Menu); 3.3 Develop
+                                        Vendor Dashboard (Stock &amp; Sales); 3.4 Develop Back-End APIs &amp; Database
+                                        Connect</td>
+                                    <td>Weeks 4–7</td>
+                                    <td>2.0 (FS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">4.0</td>
+                                    <td>System Testing &amp; QA</td>
+                                    <td>4.1 Prepare Test Cases &amp; Plan; 4.2 Conduct Unit &amp; System Testing; 4.3
+                                        Conduct QR / Order
+                                        Scanning Tests; 4.4 Perform User Acceptance Testing (UAT)</td>
+                                    <td>Week 8</td>
+                                    <td>3.0 (FS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">5.0</td>
+                                    <td>Deployment &amp; Implementation</td>
+                                    <td>5.1 Prepare Production Environment; 5.2 Deploy App &amp; Database (Cloud Host);
+                                        5.3 Vendor
+                                        Onboarding &amp; Training; 5.4 Launch App to Students &amp; Campus</td>
+                                    <td>Week 9</td>
+                                    <td>4.0 (FS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">6.0</td>
+                                    <td>Documentation &amp; Project Closure</td>
+                                    <td>6.1 Prepare Technical &amp; User Manuals; 6.2 Conduct Final Presentation / Demo;
+                                        6.3 Turn Over
+                                        System to School Canteen; 6.4 Obtain Final Project Acceptance</td>
+                                    <td>Week 10</td>
+                                    <td>5.0 (FS)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <style>
+        /* Scoped styles for the integrated Gantt Chart component (fg- = Food Stall Gantt) */
+        .fg-wrap {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #dfe7f0;
+            border-radius: 14px;
+            padding: 26px 18px 36px;
+            box-sizing: border-box;
+        }
+
+        .fg-brand-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 32px;
+            margin-bottom: 22px;
+        }
+
+        .fg-brand-block {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .fg-logo svg {
+            width: 66px;
+            height: 66px;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .fg-title {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+            line-height: 1.1;
+            color: #12304f;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        .fg-sub {
+            margin: 7px 0 5px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #12304f;
+        }
+
+        .fg-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            color: #12304f;
+            margin-top: 7px;
+            text-transform: uppercase;
+        }
+
+        .fg-tag {
+            position: relative;
+            text-align: right;
+            padding-right: 36px;
+            padding-bottom: 18px;
+        }
+
+        .fg-tag p {
+            margin: 0;
+            font-family: "Segoe Script", "Brush Script MT", cursive;
+            font-size: 22px;
+            line-height: 1.25;
+            color: #12304f;
+        }
+
+        .fg-underline {
+            position: absolute;
+            right: 36px;
+            bottom: 10px;
+            width: 132px;
+            height: 18px;
+            pointer-events: none;
+        }
+
+        .fg-mini {
+            position: absolute;
+            right: 2px;
+            bottom: -4px;
+            width: 22px;
+            height: 22px;
+            pointer-events: none;
+        }
+
+        .fg-scroll {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border: 1px solid #dfe7f0;
+            border-radius: 12px;
+            background: #ffffff;
+        }
+
+        .fg-table {
+            width: 100%;
+            min-width: 836px;
+            border-collapse: collapse;
+            table-layout: fixed;
+            background: #ffffff;
+        }
+
+        .fg-table th,
+        .fg-table td {
+            border: 1px solid #e4ebf3;
+        }
+
+        .fg-table thead th {
+            background: #12304f;
+            color: #ffffff;
+        }
+
+        .fg-idh {
+            width: 44px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            padding: 13px 6px;
+        }
+
+        .fg-acth {
+            width: 230px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: left;
+            padding: 13px 14px;
+        }
+
+        .fg-durh {
+            width: 82px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            padding: 13px 6px;
+        }
+
+        .fg-weeksh {
+            width: 480px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-align: center;
+            padding: 13px 6px;
+            text-transform: uppercase;
+        }
+
+        .fg-weekrow td {
+            background: #f6f9fc;
+            color: #12304f;
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+            padding: 7px 0;
+            border-top: 1px solid #dbe4ee;
+        }
+
+        .fg-weekrow td.fg-labels {
+            background: #12304f;
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        .fg-table tbody td {
+            padding: 0;
+        }
+
+        .fg-tdid {
+            width: 44px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 800;
+            padding: 8px 4px;
+        }
+
+        .fg-tdact {
+            color: black;
+            width: 230px;
+            text-align: left;
+            font-size: 13.5px;
+            font-weight: 700;
+            padding: 10px 14px;
+        }
+
+        .fg-tddur {
+            color: black;
+            width: 82px;
+            text-align: center;
+            font-size: 12.5px;
+            font-weight: 600;
+            padding: 10px 4px;
+        }
+
+        .fg-tdtrack {
+            padding: 0;
+            position: relative;
+        }
+
+        .fg-track {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            height: 48px;
+            background-image: repeating-linear-gradient(to right,
+                    #e4ebf3 0,
+                    #e4ebf3 1px,
+                    transparent 1px,
+                    transparent calc(100% / 10));
+        }
+
+        .fg-bar {
+            grid-row: 1;
+            align-self: center;
+            height: 34px;
+            border-radius: 5px;
+            margin: 0 2px;
+            box-shadow: 0 1px 2px rgba(18, 48, 79, 0.15);
+        }
+
+        .g1 {
+            grid-column: 1 / 2;
+        }
+
+        .g2-3 {
+            grid-column: 2 / 4;
+        }
+
+        .g4-7 {
+            grid-column: 4 / 8;
+        }
+
+        .g8 {
+            grid-column: 8 / 9;
+        }
+
+        .g9 {
+            grid-column: 9 / 10;
+        }
+
+        .g10 {
+            grid-column: 10 / 11;
+        }
+
+        .fg-b-blue {
+            background: #4169e1;
+        }
+
+        .fg-b-green {
+            background: #2e8b57;
+        }
+
+        .fg-b-orange {
+            background: #d2691e;
+        }
+
+        .fg-b-red {
+            background: #dc143c;
+        }
+
+        .fg-b-purple {
+            background: #8a2be2;
+        }
+
+        .fg-b-teal {
+            background: #008080;
+        }
+
+        .fg-r1 td {
+            background: #ebf8ff;
+        }
+
+        .fg-r2 td {
+            background: #f0fff4;
+        }
+
+        .fg-r3 td {
+            background: #fffaf0;
+        }
+
+        .fg-r4 td {
+            background: #fff5f5;
+        }
+
+        .fg-r5 td {
+            background: #faf5ff;
+        }
+
+        .fg-r6 td {
+            background: #e6fffa;
+        }
+
+        .fg-footer {
+            display: flex;
+            gap: 16px;
+            margin-top: 22px;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .fg-infocard {
+            flex: 1 1 340px;
+            background: #f2f6fc;
+            border-radius: 12px;
+            padding: 20px 22px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .fg-docicon svg {
+            width: 32px;
+            height: 36px;
+            flex-shrink: 0;
+            display: block;
+        }
+
+        .fg-dur {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: #12304f;
+            line-height: 1.45;
+        }
+
+        .fg-dur strong {
+            font-weight: 800;
+        }
+
+        .fg-note {
+            font-size: 12.5px;
+            color: #3e5a76;
+            margin-top: 7px;
+            line-height: 1.55;
+        }
+
+        .fg-legendcard {
+            flex: 1 1 360px;
+            background: #ffffff;
+            border: 1px solid #e0e8f1;
+            border-radius: 12px;
+            padding: 18px 20px;
+        }
+
+        .fg-legend {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px 20px;
+        }
+
+        .fg-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #12304f;
+            font-weight: 500;
+            min-width: 0;
+        }
+
+        .fg-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .fg-dot-blue {
+            background: #4169e1;
+        }
+
+        .fg-dot-green {
+            background: #2e8b57;
+        }
+
+        .fg-dot-orange {
+            background: #d2691e;
+        }
+
+        .fg-dot-red {
+            background: #dc143c;
+        }
+
+        .fg-dot-purple {
+            background: #8a2be2;
+        }
+
+        .fg-dot-teal {
+            background: #008080;
+        }
+
+        @media (max-width: 820px) {
+            .fg-brand-row {
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .fg-tag {
+                align-self: flex-end;
+            }
+
+            .fg-title {
+                font-size: 21px;
+            }
+
+            .fg-label {
+                letter-spacing: 5px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .fg-logo svg {
+                width: 52px;
+                height: 52px;
+            }
+
+            .fg-brand-block {
+                gap: 12px;
+            }
+
+            .fg-sub {
+                font-size: 12px;
+            }
+
+            .fg-label {
+                letter-spacing: 4px;
+            }
+
+            .fg-tag p {
+                font-size: 18px;
+            }
+
+            .fg-legend {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .fg-infocard {
+                flex-direction: column;
+            }
+        }
+    </style>
+    </head>
+
+    <body data-page="gantt">
+
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="fg-wrap">
+
+                        <div class="fg-brand-row">
+                            <div class="fg-brand-block">
+                                <div class="fg-logo" aria-hidden="true">
+                                    <svg viewBox="0 0 120 120">
+                                        <path d="M30 16 c2 7 -3 10 -1 17 M60 12 c2 7 -3 10 -1 17" stroke="#F27A1A"
+                                            stroke-width="5" stroke-linecap="round" fill="none" />
+                                        <path fill="#F27A1A"
+                                            d="M28 40 h64 a10 10 0 0 1 10 10 v36 a10 10 0 0 1 -10 10 h-64 a10 10 0 0 1 -10 -10 v-36 a10 10 0 0 1 10 -10 z" />
+                                        <path fill="#F27A1A" d="M34 40 l6 -10 h40 l6 10 z" />
+                                        <rect x="50" y="56" width="6" height="22" rx="3" fill="#ffffff" />
+                                        <rect x="63" y="56" width="6" height="22" rx="3" fill="#ffffff" />
+                                    </svg>
+                                </div>
+                                <div class="fg-text">
+                                    <h1 class="fg-title">Food Stall Pre-Order App</h1>
+                                    <p class="fg-sub">Campus Canteen Pre-Ordering &amp; Management System</p>
+                                    <div class="fg-label">G A N T T &nbsp; C H A R T</div>
+                                </div>
+                            </div>
+                            <div class="fg-tag">
+                                <p>Skip the Line.<br />Save the Time.</p>
+                                <svg class="fg-underline" viewBox="0 0 132 18" fill="none" stroke="#F27A1A"
+                                    stroke-width="3.5" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M3 13 C 34 4, 66 17, 129 7" />
+                                </svg>
+                                <svg class="fg-mini" viewBox="0 0 120 120" aria-hidden="true">
+                                    <path d="M30 16 c2 7 -3 10 -1 17 M60 12 c2 7 -3 10 -1 17" stroke="#F27A1A"
+                                        stroke-width="6" stroke-linecap="round" fill="none" />
+                                    <path fill="#F27A1A"
+                                        d="M28 40 h64 a10 10 0 0 1 10 10 v36 a10 10 0 0 1 -10 10 h-64 a10 10 0 0 1 -10 -10 v-36 a10 10 0 0 1 10 -10 z" />
+                                    <path fill="#F27A1A" d="M34 40 l6 -10 h40 l6 10 z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="fg-scroll">
+                            <table class="fg-table">
+                                <thead>
+                                    <tr>
+                                        <th class="fg-idh">ID</th>
+                                        <th class="fg-acth">Activity</th>
+                                        <th class="fg-durh">Duration</th>
+                                        <th class="fg-weeksh" colspan="10">Weeks</th>
+                                    </tr>
+                                    <tr class="fg-weekrow">
+                                        <td colspan="3" class="fg-labels"></td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="fg-r1">
+                                        <td class="fg-tdid">1</td>
+                                        <td class="fg-tdact">Project Management &amp; Planning</td>
+                                        <td class="fg-tddur">1 week</td>
+                                        <td colspan="10" class="fg-tdtrack">
+                                            <div class="fg-track">
+                                                <div class="fg-bar fg-b-blue g1"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="fg-r2">
+                                        <td class="fg-tdid">2</td>
+                                        <td class="fg-tdact">System Design</td>
+                                        <td class="fg-tddur">2 weeks</td>
+                                        <td colspan="10" class="fg-tdtrack">
+                                            <div class="fg-track">
+                                                <div class="fg-bar fg-b-green g2-3"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="fg-r3">
+                                        <td class="fg-tdid">3</td>
+                                        <td class="fg-tdact">System Development</td>
+                                        <td class="fg-tddur">4 weeks</td>
+                                        <td colspan="10" class="fg-tdtrack">
+                                            <div class="fg-track">
+                                                <div class="fg-bar fg-b-orange g4-7"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="fg-r4">
+                                        <td class="fg-tdid">4</td>
+                                        <td class="fg-tdact">System Testing &amp; QA</td>
+                                        <td class="fg-tddur">1 week</td>
+                                        <td colspan="10" class="fg-tdtrack">
+                                            <div class="fg-track">
+                                                <div class="fg-bar fg-b-red g8"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="fg-r5">
+                                        <td class="fg-tdid">5</td>
+                                        <td class="fg-tdact">Deployment &amp; Implementation</td>
+                                        <td class="fg-tddur">1 week</td>
+                                        <td colspan="10" class="fg-tdtrack">
+                                            <div class="fg-track">
+                                                <div class="fg-bar fg-b-purple g9"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="fg-r6">
+                                        <td class="fg-tdid">6</td>
+                                        <td class="fg-tdact">Documentation &amp; Project Closure</td>
+                                        <td class="fg-tddur">1 week</td>
+                                        <td colspan="10" class="fg-tdtrack">
+                                            <div class="fg-track">
+                                                <div class="fg-bar fg-b-teal g10"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="fg-footer">
+                            <div class="fg-infocard">
+                                <div class="fg-docicon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#12304F" stroke-width="1.7"
+                                        stroke-linejoin="round" stroke-linecap="round">
+                                        <path d="M7 2.5h7.5L19 7v14.5H7z" />
+                                        <path d="M14.5 2.5V7H19" />
+                                        <line x1="10.5" y1="12" x2="17" y2="12" />
+                                        <line x1="10.5" y1="15.5" x2="17" y2="15.5" />
+                                        <line x1="10.5" y1="9" x2="13" y2="9" />
+                                    </svg>
+                                </div>
+                                <div class="fg-infotext">
+                                    <div class="fg-dur"><strong>Estimated Project Duration:</strong> 10 weeks</div>
+                                    <p class="fg-note">Note: The project runs over 10 weeks (September 7 &ndash;
+                                        November 9, 2026). All
+                                        major activities follow a Finish-to-Start (FS) relationship.</p>
+                                </div>
+                            </div>
+
+                            <div class="fg-legendcard">
+                                <div class="fg-legend">
+                                    <div class="fg-item"><span class="fg-dot fg-dot-blue"></span>Project Management
+                                        &amp; Planning</div>
+                                    <div class="fg-item"><span class="fg-dot fg-dot-green"></span>System Design</div>
+                                    <div class="fg-item"><span class="fg-dot fg-dot-orange"></span>System Development
+                                    </div>
+                                    <div class="fg-item"><span class="fg-dot fg-dot-red"></span>System Testing &amp; QA
+                                    </div>
+                                    <div class="fg-item"><span class="fg-dot fg-dot-purple"></span>Deployment &amp;
+                                        Implementation</div>
+                                    <div class="fg-item"><span class="fg-dot fg-dot-teal"></span>Documentation &amp;
+                                        Project Closure</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <a class="brand" href="index.html" id="footer-app-link">
+                    <img class="brand-logo" src="img/logo.png" alt="Food Stall Pre-Order App" />
+                </a>
+            </div>
+            <p class="footer-tagline">Skip the Line. Save the Time.</p>
+            <div class="footer-bottom">
+                <span>© <span id="year">2026</span> Food Stall Pre-Order App. All rights reserved.</span>
+                <span>JRMSU Campus</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
