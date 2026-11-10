@@ -161,6 +161,57 @@
         min-width: 0;
       }
     }
+
+    /* Communication plan (scoped: pcp-) */
+    .pcp-block + .pcp-block {
+      margin-top: 48px;
+    }
+
+    .pcp-heading {
+      font-size: 22px;
+      margin: 0 0 16px;
+      padding-left: 14px;
+      border-left: 4px solid var(--blue);
+    }
+
+    .pcp-table .num {
+      white-space: normal;
+    }
+
+    .pcp-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+      max-width: 900px;
+    }
+
+    .pcp-list li {
+      position: relative;
+      padding: 12px 16px 12px 44px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      color: var(--ink);
+      font-size: 14.5px;
+    }
+
+    .pcp-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 16px;
+      top: 12px;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    @media (max-width: 560px) {
+      .pcp-heading {
+        font-size: 19px;
+      }
+    }
   </style>
 </head>
 
@@ -459,6 +510,171 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 5 -->
+    <section class="section" id="communication-plan">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Project Communication Plan</h2>
+          <p class="section-sub">Food Stall Pre-Order App: Campus Canteen Pre-Ordering &amp; Management System. This plan
+            explains how the team will communicate, share information, and coordinate with stakeholders throughout the
+            10-week project.</p>
+        </div>
+
+        <div class="pcp-block">
+          <h3 class="pcp-heading">1. Project Stakeholders</h3>
+          <div class="table-wrap pcp-table">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:300px;">Stakeholder</th>
+                  <th>Role in the Project</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="num">Project Manager</td>
+                  <td>Plans, schedules, and monitors the project; leads the team</td>
+                </tr>
+                <tr>
+                  <td class="num">Project Adviser / Instructor</td>
+                  <td>Sponsor who approves deliverables and gives academic guidance</td>
+                </tr>
+                <tr>
+                  <td class="num">Developers</td>
+                  <td>Build the customer app, vendor dashboard, and back-end APIs</td>
+                </tr>
+                <tr>
+                  <td class="num">UI/UX Designer &amp; System Analyst</td>
+                  <td>Create wireframes, and workflows; gather requirements</td>
+                </tr>
+                <tr>
+                  <td class="num">Canteen Vendors / School Canteen</td>
+                  <td>Client who manages menu, stock, and orders; joins UAT and turnover</td>
+                </tr>
+                <tr>
+                  <td class="num">Students (End Users)</td>
+                  <td>Place pre-orders and give feedback on the app</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pcp-block">
+          <h3 class="pcp-heading">2. Communication Objectives</h3>
+          <ul class="pcp-list">
+            <li>To keep team members informed about task progress and deadlines across all 6 project phases.</li>
+            <li>To make sure vendors and students can give feedback on requirements, design, and testing.</li>
+            <li>To report project status and risks to the adviser regularly for timely approval and guidance.</li>
+            <li>To share documents and files (designs, code, manuals) in one place so everyone uses the latest
+              version.</li>
+            <li>To resolve issues and conflicts quickly to keep the project on schedule.</li>
+          </ul>
+        </div>
+
+        <div class="pcp-block">
+          <h3 class="pcp-heading">3. Project Communication Matrix</h3>
+          <div class="table-wrap pcp-table">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:210px;">Stakeholder</th>
+                  <th>Information to Share</th>
+                  <th>Communication Method</th>
+                  <th style="width:170px;">Frequency</th>
+                  <th style="width:170px;">Responsible Person</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="num">Project Manager</td>
+                  <td>Task progress, schedule updates</td>
+                  <td>Group meeting</td>
+                  <td>Weekly</td>
+                  <td>Team members</td>
+                </tr>
+                <tr>
+                  <td class="num">Project Adviser</td>
+                  <td>Status report, deliverables for approval</td>
+                  <td>Consultation / progress report</td>
+                  <td>Every 2 weeks</td>
+                  <td>Project Manager</td>
+                </tr>
+                <tr>
+                  <td class="num">Developers</td>
+                  <td>Task assignments, bugs, code updates</td>
+                  <td>Group chat / GitHub</td>
+                  <td>Daily</td>
+                  <td>Project Manager</td>
+                </tr>
+                <tr>
+                  <td class="num">UI/UX Designer &amp; System Analyst</td>
+                  <td>Wireframes, requirement changes</td>
+                  <td>Shared folder (Drive) + meeting</td>
+                  <td>Weekly</td>
+                  <td>System Analyst</td>
+                </tr>
+                <tr>
+                  <td class="num">Canteen Vendors</td>
+                  <td>Requirements, demo, training, UAT results</td>
+                  <td>Interview / demo session</td>
+                  <td>As needed (Weeks 1, 8, 9, 10)</td>
+                  <td>System Analyst</td>
+                </tr>
+                <tr>
+                  <td class="num">Students (End Users)</td>
+                  <td>App feedback, usability concerns</td>
+                  <td>Survey / interview</td>
+                  <td>As needed (during UAT)</td>
+                  <td>System Analyst</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pcp-block">
+          <h3 class="pcp-heading">4. Types and Forms of Communication</h3>
+          <div class="table-wrap pcp-table">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:330px;">Communication Method</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="num">Group Chat (Messenger)</td>
+                  <td>For daily updates, quick questions, and announcements</td>
+                </tr>
+                <tr>
+                  <td class="num">Weekly Group Meeting (in person/online)</td>
+                  <td>To review progress, assign tasks, and discuss problems</td>
+                </tr>
+                <tr>
+                  <td class="num">Email / Formal Letter</td>
+                  <td>For official communication with the adviser and canteen management</td>
+                </tr>
+                <tr>
+                  <td class="num">Shared Drive &amp; GitHub</td>
+                  <td>To store and share documents, designs, and code with version control</td>
+                </tr>
+                <tr>
+                  <td class="num">Interviews &amp; Surveys</td>
+                  <td>To collect requirements and feedback from vendors and students</td>
+                </tr>
+                <tr>
+                  <td class="num">Demo / Presentation</td>
+                  <td>To show the working system to stakeholders for approval</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
