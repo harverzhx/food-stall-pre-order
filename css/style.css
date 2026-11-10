@@ -120,16 +120,34 @@ h5 { font-size: 18px; margin-bottom: 8px; }
 @media (max-width: 940px) {
   .nav-toggle { display: block; }
   .nav-menu {
-    position: absolute; top: 74px; left: 0; right: 0;
+    position: absolute; top: 100%; left: 0; right: 0;
     background: var(--bg); flex-direction: column; align-items: stretch;
+    gap: 6px;
     padding: 12px 20px 20px; border-bottom: 1px solid var(--line);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
     transform: translateY(-140%); opacity: 0; pointer-events: none;
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
   .nav-menu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
-  .nav-menu a { padding: 12px 14px; }
+  .nav-menu a {
+    padding: 12px 16px 12px 18px;
+    border-radius: 10px;
+    -webkit-tap-highlight-color: transparent;
+  }
   .nav-menu a + a { border-left: none; }
+
+  /* Mobile: swap the full-width gradient underline for a short left accent bar */
+  .nav-menu a::after { display: none; }
+  .nav-menu a::before {
+    content: "";
+    position: absolute; left: 6px; top: 50%;
+    width: 3px; height: 0; border-radius: 3px;
+    background: linear-gradient(180deg, #f5b942, #7c3aed);
+    transform: translateY(-50%);
+    transition: height 0.25s ease;
+  }
+  .nav-menu a:hover::before,
+  .nav-menu a.active::before { height: 58%; }
 }
 
 /* ============ HERO (Home) ============ */
